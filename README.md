@@ -17,3 +17,21 @@ To install dependencies run :
 ````
 pip3 install -r requirements.txt
 ````
+
+Update [config.py](config.py) with the the api gateway url and api key created by [this cdk stack](https://github.com/mitchmckenzie/speed-test-isp-cdk):
+
+```python
+# AWS API GATEWAY SETTINGS
+URL = 'AWS-API-GATEWAY-URL-FROM-CDK-STACK'
+API_KEY = 'AWS-API-GATEWAY-KEY-FROM-CDK-STACK'
+CUSTOMER_NAME = "YOUR-NAME"
+```
+
+Example:
+
+```python
+# AWS API GATEWAY SETTINGS
+URL = 'https://00xyzabc123.execute-api.us-east-1.amazonaws.com/prod/v1/save-results'
+API_KEY = 'lMngHsABCy8jBarlpsFOO8QvNwuyd45X2nC9hza2'
+CUSTOMER_NAME = "Joe Customer"
+```
